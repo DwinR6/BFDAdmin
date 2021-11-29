@@ -1,4 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+:root {
+  --primario: #010126 !important;
+  --secundario: #042959 !important;
+  --terciario: #398cbf !important;
+  --cuaternario: #f2e52e !important;
+  --quinario: #d9910b !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: bold !important;
+}
+p, button {
+  font-family: 'Montserrat', sans-serif !important;
+}
