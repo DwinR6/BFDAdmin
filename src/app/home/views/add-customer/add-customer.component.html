@@ -1,0 +1,37 @@
+
+<div class="login">
+<h2 mat-dialog-title>Add New Customer</h2>
+<mat-dialog-content class="mat-typography">
+
+    <mat-form-field class="ancho" appearance="fill" >
+        <mat-label>User</mat-label>
+        <input matInput autocomplete="off">
+      </mat-form-field>
+
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Name</mat-label>
+        <input type="password" matInput autocomplete="off">
+      </mat-form-field>
+
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Phone</mat-label>
+        <input matInput autocomplete="off">
+      </mat-form-field>
+    </mat-dialog-content>
+
+    <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput autocomplete="off">
+      </mat-form-field>
+
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Confirm Password</mat-label>
+        <input type="password" matInput autocomplete="off">
+      </mat-form-field>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Add</button>
+</mat-dialog-actions>
+
+</div> 

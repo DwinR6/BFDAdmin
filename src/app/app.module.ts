@@ -13,6 +13,14 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+ 
+//import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatInputModule } from '@angular/material/input';
+//import { AddCustomerComponent } from './components/home/view/add-customer/add-customer.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +35,11 @@ import {MatListModule} from '@angular/material/list';
     MatTooltipModule,
     MatIconModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
