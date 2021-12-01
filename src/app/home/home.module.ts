@@ -5,6 +5,8 @@ import { ManagementComponent } from './views/management/management.component';
 
 import { HomeRoutingModule } from './home-routing.module';
 
+import { ChartsModule } from 'ng2-charts';
+
 //Angular Material
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -19,21 +21,18 @@ import { DrivingComponent } from './views/driving/driving.component';
 import { TaxiDriversComponent } from './views/taxi-drivers/taxi-drivers.component';
 import { CustomersComponent } from './views/customers/customers.component';
 import { SettingsComponent } from './views/settings/settings.component';
-<<<<<<< HEAD
 import { DonutChartComponent } from './components/donut-chart/donut-chart.component';
 import { LineChartComponent } from './components/line-chart/line-chart.component';
-=======
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AddCustomerComponent } from './views/add-customer/add-customer.component';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import { AddTaxidriverComponent } from './views/add-taxidriver/add-taxidriver.component';
->>>>>>> b5bdc084551c92b0f9f15a51d6559e37179ad8a7
 
-//import { MatFormFieldModule } from '@angular/material/form-field'; 
+//import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -43,16 +42,14 @@ import { AddTaxidriverComponent } from './views/add-taxidriver/add-taxidriver.co
     TaxiDriversComponent,
     CustomersComponent,
     SettingsComponent,
-<<<<<<< HEAD
     DonutChartComponent,
     LineChartComponent,
-=======
     AddCustomerComponent,
     AddTaxidriverComponent
->>>>>>> b5bdc084551c92b0f9f15a51d6559e37179ad8a7
   ],
 
   imports: [
+    ChartsModule,
     CommonModule,
     HomeRoutingModule,
     MatSidenavModule,
@@ -62,8 +59,6 @@ import { AddTaxidriverComponent } from './views/add-taxidriver/add-taxidriver.co
     MatMenuModule,
     MatListModule,
     MatButtonModule,
-<<<<<<< HEAD
-=======
     MatTableModule,
     MatTooltipModule,
     MatPaginatorModule,
@@ -72,7 +67,6 @@ import { AddTaxidriverComponent } from './views/add-taxidriver/add-taxidriver.co
     MatDialogModule,
     FormsModule,
     MatCardModule
->>>>>>> b5bdc084551c92b0f9f15a51d6559e37179ad8a7
   ]
 })
 export class HomeModule { }
