@@ -22,6 +22,8 @@ import { DrivingComponent } from './views/driving/driving.component';
 import { TaxiDriversComponent } from './views/taxi-drivers/taxi-drivers.component';
 import { CustomersComponent } from './views/customers/customers.component';
 import { SettingsComponent } from './views/settings/settings.component';
+import { DonutChartComponent } from './components/donut-chart/donut-chart.component';
+import { LineChartComponent } from './components/line-chart/line-chart.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import { SettingsComponent } from './views/settings/settings.component';
     TaxiDriversComponent,
     CustomersComponent,
     SettingsComponent,
+    DonutChartComponent,
+    LineChartComponent,
   ],
   imports: [
     CommonModule,
@@ -42,7 +46,7 @@ import { SettingsComponent } from './views/settings/settings.component';
     MatIconModule,
     MatMenuModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
   ]
 })
 export class HomeModule { }

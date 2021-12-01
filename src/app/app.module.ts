@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//Firestore
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
 
 //Angular Material
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -27,7 +31,9 @@ import {MatListModule} from '@angular/material/list';
     MatTooltipModule,
     MatIconModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent]
