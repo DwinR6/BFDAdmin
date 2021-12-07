@@ -8,8 +8,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 :root {
-  --primario: #010126 !important;
-  --secundario: #042959 !important;
+  --primarioDark: #23272B;
+  --primario: #343A40 !important;
+  --secundario: #FEB800 !important;
+  --secundarioDark: #E3A532 !important;
+  --accent: #f2f2f2 !important;
   --terciario: #398cbf !important;
   --cuaternario: #f2e52e !important;
   --quinario: #d9910b !important;
