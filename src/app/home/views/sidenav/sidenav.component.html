@@ -1,12 +1,38 @@
 <mat-sidenav-container fullscreen>
   <mat-sidenav #sidenav mode="side" id="navbar-high" class="app-sidenav" opened> <!--[class.menu-open]="isMenuOpen"
     [class.menu-close]="!isMenuOpen"-->
-    <mat-toolbar id="menu-toolbar"  class="toolbar" color="primary">
-      <span class="toolbar-filler text-center" *ngIf="user">{{ user.user }} <hr></span>
+    <mat-toolbar id="menu-toolbar"  class="toolbar" color="primary" >
+      <span class="toolbar-filler text-center home-a">
+        <div class="logo-container">
+          <img src="../../../../assets/images/user.png" height="15" alt="">
+        <a class="a-home" mat-list-item (click)="getTitulo('Management', sidenav)"  [routerLink]="['/home/management']" >
+
+          <span  class="title-home" mat-line>Barrio Fino Driver</span>
+        </a> <hr>
+        </div>
+      </span>
       <button mat-icon-button (click)="toggleMenu(sidenav)" class="mat-icon-button sidenav-toggle-button">
         <mat-icon aria-label="Menu" class="material-icons">menu</mat-icon>
       </button>
     </mat-toolbar>
+    <div class="profile-container">
+      <div class="user-account">
+        <div class="user_div">
+            <img src="../../../../assets/images/user.png" class="user-photo" alt="User Profile Picture">
+        </div>
+        <div class="dropdown">
+            <span>Welcome,</span>
+            <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Christy Wert</strong></a>
+            <ul class="dropdown-menu dropdown-menu-right account">
+                <li><a href="page-profile.html"><i class="icon-user"></i>My Profile</a></li>
+                <li><a href="app-inbox.html"><i class="icon-envelope-open"></i>Messages</a></li>
+                <li><a href="javascript:void(0);"><i class="icon-settings"></i>Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="page-login.html"><i class="icon-power"></i>Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
     <mat-nav-list>
       <a mat-list-item (click)="getTitulo('Management', sidenav)" class="sidenav-link" [routerLink]="['/home/management']" routerLinkActive="active"
         [routerLinkActiveOptions]="{exact: true}"
